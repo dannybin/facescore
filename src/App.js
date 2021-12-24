@@ -14,7 +14,7 @@ function App() {
   // Main function
   const runCoco = async () => {
     // 3. TODO - Load network 
-    const net = await tf.loadGraphModel('https://livelong.s3.au-syd.cloud-object-storage.appdomain.cloud/model.json')
+    const net = await tf.loadGraphModel('https://nacho-ibm-bucket.s3.us-east.cloud-object-storage.appdomain.cloud/model.json')
     
     // Loop and detect hands
     setInterval(() => {

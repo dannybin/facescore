@@ -1,9 +1,12 @@
 // Define our labelmap
 const labelMap = {
-    1:{name:'ThumbsUp', color:'red'},
-    2:{name:'ThumbsDown', color:'yellow'},
-    3:{name:'ThankYou', color:'lime'},
-    4:{name:'LiveLong', color:'blue'},
+    1:{name:'0', color:'red'},
+    2:{name:'2', color:'yellow'},
+    3:{name:'4', color:'lime'},
+    4:{name:'6', color:'blue'},
+    5:{name:'8', color:'black'},
+    6:{name:'10', color:'white'},
+
 }
 
 // Define a drawing function
