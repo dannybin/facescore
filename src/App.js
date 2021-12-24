@@ -49,16 +49,18 @@ function App() {
       const expanded = casted.expandDims(0)
       const obj = await net.executeAsync(expanded)
       
-      const boxes = await obj[4].array()
-      const classes = await obj[5].array()
-      const scores = await obj[6].array()
+      console.log(await obj[5].array())
+
+      const boxes = await obj[7].array()
+      const classes = await obj[2].array()
+      const scores = await obj[5].array()
     
       // Draw mesh
       const ctx = canvasRef.current.getContext("2d");
 
       // 5. TODO - Update drawing utility
       // drawSomething(obj, ctx)  
-      requestAnimationFrame(()=>{drawRect(boxes[0], classes[0], scores[0], 0.9, videoWidth, videoHeight, ctx)}); 
+      requestAnimationFrame(()=>{drawRect(boxes[0], classes[0], scores[0], 0.8, videoWidth, videoHeight, ctx)}); 
 
       tf.dispose(img)
       tf.dispose(resized)
