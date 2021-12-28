@@ -7,9 +7,6 @@ import { nextFrame } from "@tensorflow/tfjs";
 // 2. TODO - Import drawing utility here
 import {drawRect} from "./utilities"; 
 
-//import express
-const express = require('express');
-const app =express();
 
 function App() {
   const webcamRef = useRef(null);
